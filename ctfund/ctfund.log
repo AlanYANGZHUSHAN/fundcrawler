@@ -1,0 +1,66 @@
+Wed, 22 Nov 2017 11:59:55 ctfund.py[line:194] INFO start to get fund list,please wait.......
+Wed, 22 Nov 2017 12:00:06 ctfund.py[line:72] INFO get_title_list 财通福鑫定开混合 end
+Wed, 22 Nov 2017 12:00:19 ctfund.py[line:72] INFO get_title_list 财通福盛定开混合 end
+Wed, 22 Nov 2017 12:00:34 ctfund.py[line:72] INFO get_title_list 财通福瑞定开混合 end
+Wed, 22 Nov 2017 12:00:48 ctfund.py[line:72] INFO get_title_list 财通多策略福享混合 end
+Wed, 22 Nov 2017 12:01:06 ctfund.py[line:72] INFO get_title_list 财通多策略升级混合 end
+Wed, 22 Nov 2017 12:01:17 ctfund.py[line:75] INFO get_title_list 财通多策略精选混合 early end
+Wed, 22 Nov 2017 12:01:26 ctfund.py[line:75] INFO get_title_list 财通成长优选混合 early end
+Wed, 22 Nov 2017 12:01:38 ctfund.py[line:75] INFO get_title_list 财通可持续混合 early end
+Wed, 22 Nov 2017 12:01:50 ctfund.py[line:75] INFO get_title_list 财通价值动量混合 early end
+Wed, 22 Nov 2017 12:02:01 ctfund.py[line:75] INFO get_title_list 财通稳健增长债券 early end
+Wed, 22 Nov 2017 12:02:08 ctfund.py[line:72] INFO get_title_list 财通稳健增长债券 end
+Wed, 22 Nov 2017 12:02:19 ctfund.py[line:75] INFO get_title_list 财通收益增强债券 early end
+Wed, 22 Nov 2017 12:02:28 ctfund.py[line:72] INFO get_title_list 财通收益增强债券 end
+Wed, 22 Nov 2017 12:02:40 ctfund.py[line:75] INFO get_title_list 财通指数100 early end
+Wed, 22 Nov 2017 12:02:45 ctfund.py[line:72] INFO get_title_list 财通指数100 end
+Wed, 22 Nov 2017 12:02:57 ctfund.py[line:75] INFO get_title_list 财通纯债债券 early end
+Wed, 22 Nov 2017 12:03:03 ctfund.py[line:72] INFO get_title_list 财通纯债债券 end
+Wed, 22 Nov 2017 12:03:13 ctfund.py[line:72] INFO get_title_list 财通宝货币 end
+Wed, 22 Nov 2017 12:03:28 ctfund.py[line:72] INFO get_title_list 财通宝货币 end
+Wed, 22 Nov 2017 12:05:05 ctfund.py[line:75] INFO get_title_list 基金公告 early end
+Wed, 22 Nov 2017 12:05:05 ctfund.py[line:141] INFO -------共失败57条记录----------------
+Wed, 22 Nov 2017 12:13:04 ctfund.py[line:198] INFO start to get fund list,please wait.......
+Wed, 22 Nov 2017 12:13:15 ctfund.py[line:76] INFO get_title_list 财通福鑫定开混合 end
+Wed, 22 Nov 2017 12:13:23 ctfund.py[line:76] INFO get_title_list 财通福盛定开混合 end
+Wed, 22 Nov 2017 12:13:33 ctfund.py[line:76] INFO get_title_list 财通福瑞定开混合 end
+Wed, 22 Nov 2017 12:13:44 ctfund.py[line:76] INFO get_title_list 财通多策略福享混合 end
+Wed, 22 Nov 2017 12:13:57 ctfund.py[line:76] INFO get_title_list 财通多策略升级混合 end
+Wed, 22 Nov 2017 12:14:06 ctfund.py[line:79] INFO get_title_list 财通多策略精选混合 early end
+Wed, 22 Nov 2017 12:14:15 ctfund.py[line:79] INFO get_title_list 财通成长优选混合 early end
+Wed, 22 Nov 2017 12:14:25 ctfund.py[line:79] INFO get_title_list 财通可持续混合 early end
+Wed, 22 Nov 2017 12:14:44 ctfund.py[line:79] INFO get_title_list 财通价值动量混合 early end
+Wed, 22 Nov 2017 12:14:54 ctfund.py[line:79] INFO get_title_list 财通稳健增长债券 early end
+Wed, 22 Nov 2017 12:14:56 ctfund.py[line:76] INFO get_title_list 财通稳健增长债券 end
+Wed, 22 Nov 2017 12:15:06 ctfund.py[line:79] INFO get_title_list 财通收益增强债券 early end
+Wed, 22 Nov 2017 12:15:08 ctfund.py[line:76] INFO get_title_list 财通收益增强债券 end
+Wed, 22 Nov 2017 12:15:18 ctfund.py[line:79] INFO get_title_list 财通指数100 early end
+Wed, 22 Nov 2017 12:15:20 ctfund.py[line:76] INFO get_title_list 财通指数100 end
+Wed, 22 Nov 2017 12:15:30 ctfund.py[line:79] INFO get_title_list 财通纯债债券 early end
+Wed, 22 Nov 2017 12:15:32 ctfund.py[line:76] INFO get_title_list 财通纯债债券 end
+Wed, 22 Nov 2017 12:15:39 ctfund.py[line:76] INFO get_title_list 财通宝货币 end
+Wed, 22 Nov 2017 12:15:46 ctfund.py[line:76] INFO get_title_list 财通宝货币 end
+Wed, 22 Nov 2017 12:17:05 ctfund.py[line:79] INFO get_title_list 基金公告 early end
+Wed, 22 Nov 2017 12:17:05 ctfund.py[line:145] INFO -------共失败0条记录----------------
+Wed, 22 Nov 2017 17:34:01 ctfund.py[line:212] INFO start to get fund list,please wait.......
+Wed, 22 Nov 2017 17:34:06 ctfund.py[line:76] INFO get_title_list 财通福鑫定开混合 end
+Wed, 22 Nov 2017 17:34:14 ctfund.py[line:76] INFO get_title_list 财通福盛定开混合 end
+Wed, 22 Nov 2017 17:34:25 ctfund.py[line:76] INFO get_title_list 财通福瑞定开混合 end
+Wed, 22 Nov 2017 17:34:37 ctfund.py[line:76] INFO get_title_list 财通多策略福享混合 end
+Wed, 22 Nov 2017 17:34:52 ctfund.py[line:76] INFO get_title_list 财通多策略升级混合 end
+Wed, 22 Nov 2017 17:35:02 ctfund.py[line:79] INFO get_title_list 财通多策略精选混合 early end
+Wed, 22 Nov 2017 17:35:11 ctfund.py[line:79] INFO get_title_list 财通成长优选混合 early end
+Wed, 22 Nov 2017 17:35:22 ctfund.py[line:79] INFO get_title_list 财通可持续混合 early end
+Wed, 22 Nov 2017 17:35:34 ctfund.py[line:79] INFO get_title_list 财通价值动量混合 early end
+Wed, 22 Nov 2017 17:35:44 ctfund.py[line:79] INFO get_title_list 财通稳健增长债券 early end
+Wed, 22 Nov 2017 17:35:47 ctfund.py[line:76] INFO get_title_list 财通稳健增长债券 end
+Wed, 22 Nov 2017 17:35:58 ctfund.py[line:79] INFO get_title_list 财通收益增强债券 early end
+Wed, 22 Nov 2017 17:36:00 ctfund.py[line:76] INFO get_title_list 财通收益增强债券 end
+Wed, 22 Nov 2017 17:36:12 ctfund.py[line:79] INFO get_title_list 财通指数100 early end
+Wed, 22 Nov 2017 17:36:14 ctfund.py[line:76] INFO get_title_list 财通指数100 end
+Wed, 22 Nov 2017 17:36:25 ctfund.py[line:79] INFO get_title_list 财通纯债债券 early end
+Wed, 22 Nov 2017 17:36:27 ctfund.py[line:76] INFO get_title_list 财通纯债债券 end
+Wed, 22 Nov 2017 17:36:35 ctfund.py[line:76] INFO get_title_list 财通宝货币 end
+Wed, 22 Nov 2017 17:36:42 ctfund.py[line:76] INFO get_title_list 财通宝货币 end
+Wed, 22 Nov 2017 17:38:08 ctfund.py[line:79] INFO get_title_list 基金公告 early end
+Wed, 22 Nov 2017 17:38:08 ctfund.py[line:145] INFO -------共失败0条记录----------------
