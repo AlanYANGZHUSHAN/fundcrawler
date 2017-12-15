@@ -41,6 +41,7 @@ class DownloadFile:
 		writer = pd.ExcelWriter('NEW'+self.filename)
 		self.data.to_excel(writer,sheet_name = 'gd_fund',encoding ='utf_8_sig')
 		self.note.to_excel(writer,sheet_name = 'Sheet1',encoding ='utf_8_sig')
+		writer.save()
 		self.filename = 'NEW'+self.filename
 
 	def download_file_by_url(self):
