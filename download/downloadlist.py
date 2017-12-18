@@ -1,10 +1,16 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Dec 15 16:07:41 2017
+
+@author: NY535WP
+"""
 from selenium import webdriver
 import urllib
 import pandas as pd
-import numpy as np
+#import numpy as np
 import os
 import time
-import random
+#import random
 class DownloadFile:
 	def __init__(self):
 		self.driver = webdriver.PhantomJS()
@@ -23,6 +29,7 @@ class DownloadFile:
 		self.rename_type = None
 		self.data = None
 		self.note = None
+		self.name_type = None
 		self.path = ['/html/body/div[3]/div/div[2]/ul/li[1]/a','/html/body/div[3]/div/div[2]/ul/li[2]/a']
 
 	def readlistform(self,skiprows=[]):
@@ -33,6 +40,10 @@ class DownloadFile:
 		df = pd.read_excel(self.filename,'Sheet1')
 		self.note = df
 		self.rename_type =  list(df[df.loc[:,'需要重命名的公告类型'] == 'Y'].loc[:,'公告类型'])
+		self.name_type =  list(df['公告类型']) 
+		for item in self.name_type:
+			if not os.path.exists(self.filepath+str(item)):
+				os.mkdir(self.filepath+str(item))  
 		print("-----需要重命名的公告类型："+','.join(self.rename_type)+'-----')
 
 	def copyxls(self):
@@ -56,9 +67,11 @@ class DownloadFile:
 					filename = self.savefile(self.data.loc[item,:],'.pdf')
 				else:
 					filename = self.find_pdfdoc_by_xpath(self.data.loc[item,:])
-
-				self.data.loc[item,'final_path'] = self.filepath+filename
-				print('>>>'+filename+'>>>')
+				if self.data.loc[item,'type'] in self.name_type:
+					self.data.loc[item,'final_path'] = self.filepath+self.data.loc[item,'type']+'/'+filename
+				else:
+					self.data.loc[item,'final_path'] = self.filepath+filename
+				print('>>>'+self.data.loc[item,'final_path']+'>>>')
 			except Exception as e:
 				print(str(e))
 				fail_index.append(item)
@@ -105,7 +118,7 @@ class DownloadFile:
 			temp_item['title'] = file_dict['docx']['title']
 			filename = self.savefile(pd.Series(temp_item),'.docx')
 			return filename
-		filename = savefile(self,pd.Series(item),'.html')
+		filename = self.savefile(self,pd.Series(item),'.html')
 		return filename
 
 	def find_pdfdoc_by_onepath(self,item):
@@ -136,20 +149,27 @@ class DownloadFile:
 		if item['type'] in self.rename_type:
 			item = item.fillna('')
 			if item['year_times']:
-				filename = str(item['fund_ey_seriel'])+str(item['fund_full_name'])+str(item['type'])+'('+str(item['year_times'])+')'
+				filename = str(item['fund_ey_seriel'])+' '+str(item['fund_full_name'])+' '+str(item['type'])+'('+' '+str(item['year_times'])+')'
 			else:
-				filename = str(item['fund_ey_seriel'])+str(item['fund_full_name'])+str(item['type'])
+				filename = str(item['fund_ey_seriel'])+' '+str(item['fund_full_name'])+' '+str(item['type'])
 		else:
 			filename = item['title']
-		if os.path.exists(self.filepath+filename+filetype):
-			filename = filename+';'+str(time.time())+filetype
-		else:
-			filename = filename+filetype
 		if self.mode == 1:
 			page = self.opener.open(url).read()
 		else:
 			page = urllib.request.urlopen(url).read()
-		f = open(self.filepath+filename,'wb')
+		if item['type'] in self.name_type:
+			if os.path.exists(self.filepath+item['type'] + "/"+filename+filetype):
+				filename = filename+';'+str(time.time())+filetype
+			else:
+				filename = filename+filetype
+			f = open(self.filepath + item['type'] + "/" + filename,'wb')
+		else:
+			if os.path.exists(self.filepath+filename+filetype):
+				filename = filename+';'+str(time.time())+filetype
+			else:
+				filename = filename+filetype
+			f = open(self.filepath + filename,'wb')
 		f.write(page)
 		f.close()
 		return filename
